@@ -129,7 +129,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--datapath', default='./data/TrainDataset')
     parser.add_argument('--savepath', default='./SIJ1')
-    parser.add_argument('--mode', default='train')
     parser.add_argument('--lr', default=0.4)
     parser.add_argument('--epoch', default=40)
     parser.add_argument('--batch_size', default=16)

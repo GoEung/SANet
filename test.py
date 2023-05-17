@@ -10,7 +10,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import Dataset, DataLoader
 from model import *
-import matplotlib.pyplot as plt
 import albumentations as A
 from albumentations.pytorch import ToTensorV2
 
@@ -67,7 +66,6 @@ if __name__=='__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--datapaths', default='./data/TestDataset/')
     parser.add_argument('--predpaths', default='./eval/prediction/SIJ/')
-    parser.add_argument('--mode', default='test')
     parser.add_argument('--num_workers', default=2)
     parser.add_argument('--snapshot', default='./SIJ1/model-128')
     args = parser.parse_args()
